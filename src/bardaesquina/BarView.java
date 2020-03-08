@@ -164,8 +164,19 @@ public class BarView extends javax.swing.JFrame {
 
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
-        new ClienteForm(this).setVisible(true);
+//       Comente as proximas 10 linhas se quiser adicionar manualmente
+        this.createCliente("Paulo", 1, 2);
+        this.createCliente("Paulo1", 1, 2);
+        this.createCliente("Paulo2", 1, 2);
+        this.createCliente("Paulo3", 1, 2);
+        this.createCliente("Paulo4", 1, 2);
+        this.createCliente("Paulo5", 1, 2);
+        this.createCliente("Paulo6", 1, 2);
+        this.createCliente("Paulo7", 1, 2);
+        this.createCliente("Paulo8", 1, 2);
+        this.createCliente("Paulo9", 1, 2);
+//        Descomente a proxima linha se quiser adicionar manualmente
+//        new ClienteForm(this).setVisible(true);
 //        this.cliente1.setText("Cliente 1");
     }//GEN-LAST:event_jButton1ActionPerformed
 
