@@ -46,11 +46,16 @@ public class Cliente extends Thread {
     
     public void printStatus(String status, float time) {
         long tempoInicial = System.currentTimeMillis();
-        while ((System.currentTimeMillis() - tempoInicial) / 1000 < time)
+        long before = (System.currentTimeMillis() - tempoInicial) / 1000;
+        while ((System.currentTimeMillis() - tempoInicial) / 1000 < time) {
+            int count =  before !=(System.currentTimeMillis() - tempoInicial) / 1000? (int)(this.father.getjPanel2().getWidth()/time) : 0;
+            this.label.setLocation((this.label.getX() + count)%this.father.getjPanel2().getWidth(),  this.label.getY());
             this.label.setText(this.identificador + status + (
                         (System.currentTimeMillis() - tempoInicial) / 1000
                         )
                 );
+            before = (System.currentTimeMillis() - tempoInicial) / 1000;
+        }
         this.label.setText(this.identificador + " na fila.");
     }
     @Override
@@ -61,23 +66,23 @@ public class Cliente extends Thread {
             if(estadoAtual.equals(" No Bar ")) {
                     try {
                         this.mutex2.acquire();
-                        System.out.println("Cliente " + this.identificador + " candidato -" + this.father.empty);
+                        System.out.println(  System.currentTimeMillis() + " -> Cliente " + this.identificador + " candidato -" + this.father.empty);
                         this.mutex.acquire();
                                 if(this.father.empty < this.father.qntCadeiras)
                                     this.father.empty++;
                                 if(this.father.empty < this.father.qntCadeiras) {
                                         this.mutex2.release();
                                 }
-                                 System.out.println("Cliente " + this.identificador + " apto -" + this.father.empty);
+                                 System.out.println( System.currentTimeMillis() + " -> Cliente " + this.identificador + " apto -" + this.father.empty);
                         this.mutex.release();
                        s.acquire();
-                            System.out.println("Cliente " + this.identificador + " entrou -" + this.father.empty);
+                            System.out.println( System.currentTimeMillis() + " -> Cliente " + this.identificador + " entrou -" + this.father.empty);
                             this.printStatus(estadoAtual, this.tempoBar);
                             estadoAtual = " Em Casa ";
                             this.mutex.acquire();
-                            this.father.empty--;
-                            if(this.father.empty == 0) this.mutex2.release();
-                            System.out.println("Cliente " + this.identificador + " saiu -" + this.father.empty);
+                                this.father.empty--;
+                                System.out.println( System.currentTimeMillis() + " -> Cliente " + this.identificador + " saiu -" + this.father.empty);    
+                                if(this.father.empty == 0) this.mutex2.release();
                             this.mutex.release();
                         s.release();
                     } catch (Exception e) {

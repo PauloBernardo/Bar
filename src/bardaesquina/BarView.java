@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 /**
  *
@@ -71,22 +72,21 @@ public class BarView extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(cliente1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cliente4))
+                    .addComponent(cliente1)
+                    .addComponent(cliente2)
+                    .addComponent(cliente3)
                     .addComponent(cliente6)
                     .addComponent(cliente7)
                     .addComponent(cliente8)
                     .addComponent(cliente9)
                     .addComponent(cliente10)
-                    .addComponent(cliente2)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(cliente3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cliente5)))
-                .addContainerGap(269, Short.MAX_VALUE))
+                    .addComponent(cliente5)
+                    .addComponent(cliente4))
+                .addGap(536, 536, 536))
         );
+
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {cliente1, cliente10, cliente2, cliente3, cliente4, cliente5, cliente6, cliente7, cliente8, cliente9});
+
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
@@ -108,9 +108,11 @@ public class BarView extends javax.swing.JFrame {
                 .addComponent(cliente8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cliente9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
                 .addComponent(cliente10))
         );
+
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cliente1, cliente10, cliente2, cliente3, cliente4, cliente5, cliente6, cliente7, cliente8, cliente9});
 
         jLabel1.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         jLabel1.setText("BAR CLUB");
@@ -127,25 +129,28 @@ public class BarView extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(55, Short.MAX_VALUE)
+                .addContainerGap(159, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(121, 121, 121)
-                        .addComponent(jLabel1)))
-                .addContainerGap(58, Short.MAX_VALUE))
+                        .addGap(239, 239, 239)
+                        .addComponent(jButton1))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(159, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(51, 51, 51)
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(52, 52, 52)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(40, 40, 40))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -165,18 +170,18 @@ public class BarView extends javax.swing.JFrame {
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 //       Comente as proximas 10 linhas se quiser adicionar manualmente
-        this.createCliente("Paulo", 1, 2);
-        this.createCliente("Paulo1", 1, 2);
-        this.createCliente("Paulo2", 1, 2);
-        this.createCliente("Paulo3", 1, 2);
-        this.createCliente("Paulo4", 1, 2);
-        this.createCliente("Paulo5", 1, 2);
-        this.createCliente("Paulo6", 1, 2);
-        this.createCliente("Paulo7", 1, 2);
-        this.createCliente("Paulo8", 1, 2);
-        this.createCliente("Paulo9", 1, 2);
+//        this.createCliente("Paulo", 1, 2);
+//        this.createCliente("Paulo1", 1, 2);
+//        this.createCliente("Paulo2", 1, 2);
+//        this.createCliente("Paulo3", 1, 2);
+//        this.createCliente("Paulo4", 1, 2);
+//        this.createCliente("Paulo5", 1, 2);
+//        this.createCliente("Paulo6", 1, 2);
+//        this.createCliente("Paulo7", 1, 2);
+//        this.createCliente("Paulo8", 1, 2);
+//        this.createCliente("Paulo9", 1, 2);
 //        Descomente a proxima linha se quiser adicionar manualmente
-//        new ClienteForm(this).setVisible(true);
+        new ClienteForm(this).setVisible(true);
 //        this.cliente1.setText("Cliente 1");
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -255,4 +260,12 @@ public class BarView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
+
+    public JPanel getjPanel2() {
+        return jPanel2;
+    }
+
+    public void setjPanel2(JPanel jPanel2) {
+        this.jPanel2 = jPanel2;
+    }
 }
