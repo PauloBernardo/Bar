@@ -21,7 +21,7 @@ public class Cliente extends Thread {
     Semaphore s;
     Semaphore mutex;
     Semaphore mutex2;
-    BarView father;
+    BarView bar;
     Cliente(
             JLabel get, 
             String identificador, 
@@ -40,7 +40,7 @@ public class Cliente extends Thread {
         this.s = s;
         this.mutex = mutex;
         this.mutex2 = mutex2;
-        this.father = father;
+        this.bar = father;
     }
     
     
@@ -48,16 +48,17 @@ public class Cliente extends Thread {
         long tempoInicial = System.currentTimeMillis();
         long before = (System.currentTimeMillis() - tempoInicial) / 1000;
         while ((System.currentTimeMillis() - tempoInicial) / 1000 < time) {
-            int count =  before !=(System.currentTimeMillis() - tempoInicial) / 1000? (int)(this.father.getjPanel2().getWidth()/time) : 0;
-            this.label.setLocation((this.label.getX() + count)%this.father.getjPanel2().getWidth(),  this.label.getY());
+//            int count =  before !=(System.currentTimeMillis() - tempoInicial) / 1000? (int)(this.father.getjPanel2().getWidth()/time) : 0;
+//            this.label.setLocation((this.label.getX() + count)%this.father.getjPanel2().getWidth(),  this.label.getY());
             this.label.setText(this.identificador + status + (
                         (System.currentTimeMillis() - tempoInicial) / 1000
-                        )
+                        ) + " - Tempo total:  " + time
                 );
             before = (System.currentTimeMillis() - tempoInicial) / 1000;
         }
         this.label.setText(this.identificador + " na fila.");
     }
+    
     @Override
     public void run() {
         String estadoAtual = " No Bar ";
@@ -66,23 +67,22 @@ public class Cliente extends Thread {
             if(estadoAtual.equals(" No Bar ")) {
                     try {
                         this.mutex2.acquire();
-                        System.out.println(  System.currentTimeMillis() + " -> Cliente " + this.identificador + " candidato -" + this.father.empty);
+                        System.out.println(System.currentTimeMillis() + " -> Cliente " + this.identificador + " candidato -" + this.bar.numeroClientes);
                         this.mutex.acquire();
-                                if(this.father.empty < this.father.qntCadeiras)
-                                    this.father.empty++;
-                                if(this.father.empty < this.father.qntCadeiras) {
-                                        this.mutex2.release();
+                                if(this.bar.numeroClientes < this.bar.qntCadeiras) {
+                                    this.bar.numeroClientes++;
+                                    this.mutex2.release();
                                 }
-                                 System.out.println( System.currentTimeMillis() + " -> Cliente " + this.identificador + " apto -" + this.father.empty);
+                                 System.out.println(System.currentTimeMillis() + " -> Cliente " + this.identificador + " apto -" + this.bar.numeroClientes);
                         this.mutex.release();
                        s.acquire();
-                            System.out.println( System.currentTimeMillis() + " -> Cliente " + this.identificador + " entrou -" + this.father.empty);
-                            this.printStatus(estadoAtual, this.tempoBar);
+                            System.out.println(System.currentTimeMillis() + " -> Cliente " + this.identificador + " entrou -" + this.bar.numeroClientes);
+                            this.printStatus(estadoAtual, this.tempoBar); // Beber
                             estadoAtual = " Em Casa ";
                             this.mutex.acquire();
-                                this.father.empty--;
-                                System.out.println( System.currentTimeMillis() + " -> Cliente " + this.identificador + " saiu -" + this.father.empty);    
-                                if(this.father.empty == 0) this.mutex2.release();
+                                this.bar.numeroClientes--;
+                                System.out.println(System.currentTimeMillis() + " -> Cliente " + this.identificador + " saiu -" + this.bar.numeroClientes);    
+                                if(this.bar.numeroClientes == 0) this.mutex2.release();
                             this.mutex.release();
                         s.release();
                     } catch (Exception e) {
