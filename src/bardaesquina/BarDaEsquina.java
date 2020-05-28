@@ -16,7 +16,7 @@ public class BarDaEsquina {
      */
     public static void main(String[] args) {
        System.out.println("Programa Iniciando!!");
-       BarView bar = new BarView("Bar Club", 3);
+       BackgroundBarView bar = new BackgroundBarView("Bar da esquina", 8);
        bar.setVisible(true);
     }
     

@@ -21,8 +21,8 @@ public class ClienteForm extends javax.swing.JFrame {
         initComponents();
     }
 
-    BarView father = null;
-    ClienteForm(BarView aThis) {
+    BackgroundBarView father = null;
+    ClienteForm(BackgroundBarView aThis) {
        this.father= aThis;
        initComponents();
     }

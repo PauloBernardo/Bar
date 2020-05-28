@@ -129,16 +129,13 @@ public class BarView extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(159, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(239, 239, 239)
                         .addComponent(jButton1))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(159, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -181,11 +178,11 @@ public class BarView extends javax.swing.JFrame {
 //        this.createCliente("Paulo8", 5, 10);
 //        this.createCliente("Paulo9", 5, 10);
 //        Descomente a proxima linha se quiser adicionar manualmente
-        new ClienteForm(this).setVisible(true);
+//        new ClienteForm(this).setVisible(true);
 //        this.cliente1.setText("Cliente 1");
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    public void createCliente(String identificador, float tempoCasa, float tempoBar) {
+    /*public void createCliente(String identificador, float tempoCasa, float tempoBar) {
         ArrayList<JLabel> list = new ArrayList();
         list.add(cliente1);
         list.add(cliente2);
@@ -208,7 +205,7 @@ public class BarView extends javax.swing.JFrame {
                 this
         );
         cliente.start();
-    }
+    }*/
     /**
      * @param args the command line arguments
      */
