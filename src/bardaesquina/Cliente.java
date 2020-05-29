@@ -21,7 +21,7 @@ public class Cliente extends Thread {
     Semaphore s;
     Semaphore mutex;
     Semaphore mutex2;
-    BackgroundBarView bar;
+    BarView bar;
     Cliente(
             JLabel get, 
             String identificador, 
@@ -30,7 +30,7 @@ public class Cliente extends Thread {
             Semaphore s, 
             Semaphore mutex,
             Semaphore mutex2,
-            BackgroundBarView father
+            BarView father
     ) {
         super(identificador);
         this.label = get;
