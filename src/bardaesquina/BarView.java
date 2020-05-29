@@ -6,7 +6,6 @@
 package bardaesquina;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.Semaphore;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -14,11 +13,13 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author paulo
+ * @author estagio2
  */
 public class BarView extends javax.swing.JFrame {
 
-   
+    /**
+     * Creates new form BarView
+     */
     Semaphore s = null;
     Semaphore mutex = new Semaphore(1, true);
     Semaphore mutex2 = new Semaphore(1, true);
@@ -26,15 +27,30 @@ public class BarView extends javax.swing.JFrame {
     int actualIndex = 0;
     JFrame isto = this;
     int numeroClientes = 0;
-    public BarView() {
+    
+    public BarView(){
         initComponents();
     }
-
-    public BarView(String bar_Club, int qntCadeiras) {
-        super(bar_Club);
+    
+    public BarView(String barClub, int qntCadeiras) {
+        super(barClub);
         initComponents();
+        String[] bar = new String[10];
+        bar[0] = "/imagens/bar-backgrounds/bar1.png";
+        bar[1] = "/imagens/bar-backgrounds/bar2.png";
+        bar[2] = "/imagens/bar-backgrounds/bar3.png";
+        bar[3] = "/imagens/bar-backgrounds/bar4.png";
+        bar[4] = "/imagens/bar-backgrounds/bar5.png";
+        bar[5] = "/imagens/bar-backgrounds/bar6.png";
+        bar[6] = "/imagens/bar-backgrounds/bar7.png";
+        bar[7] = "/imagens/bar-backgrounds/bar8.png";
+        bar[8] = "/imagens/bar-backgrounds/bar9.png";
+        bar[9] = "/imagens/bar-backgrounds/bar10.png";
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource(bar[qntCadeiras - 1])));
+        setSize(1360, 450);
         this.s = new Semaphore(qntCadeiras, true);
         this.qntCadeiras = qntCadeiras;
+    
     }
 
     /**
@@ -47,142 +63,116 @@ public class BarView extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
         cliente1 = new javax.swing.JLabel();
         cliente2 = new javax.swing.JLabel();
         cliente3 = new javax.swing.JLabel();
+        cliente4 = new javax.swing.JLabel();
+        cliente5 = new javax.swing.JLabel();
         cliente6 = new javax.swing.JLabel();
         cliente7 = new javax.swing.JLabel();
         cliente8 = new javax.swing.JLabel();
         cliente9 = new javax.swing.JLabel();
         cliente10 = new javax.swing.JLabel();
-        cliente5 = new javax.swing.JLabel();
-        cliente4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(139, 175, 138));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cliente1)
-                    .addComponent(cliente2)
-                    .addComponent(cliente3)
-                    .addComponent(cliente6)
-                    .addComponent(cliente7)
-                    .addComponent(cliente8)
-                    .addComponent(cliente9)
-                    .addComponent(cliente10)
-                    .addComponent(cliente5)
-                    .addComponent(cliente4))
-                .addGap(536, 536, 536))
-        );
-
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {cliente1, cliente10, cliente2, cliente3, cliente4, cliente5, cliente6, cliente7, cliente8, cliente9});
-
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(cliente1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cliente2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cliente4)
-                .addGap(28, 28, 28)
-                .addComponent(cliente5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cliente3)
-                .addGap(28, 28, 28)
-                .addComponent(cliente6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cliente7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cliente8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cliente9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
-                .addComponent(cliente10))
-        );
-
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cliente1, cliente10, cliente2, cliente3, cliente4, cliente5, cliente6, cliente7, cliente8, cliente9});
-
-        jLabel1.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
-        jLabel1.setText("BAR CLUB");
-
-        jButton1.setText("Criar Bebum");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(159, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(239, 239, 239)
-                        .addComponent(jButton1))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(159, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(cliente1)
+                    .addComponent(cliente2)
+                    .addComponent(cliente3)
+                    .addComponent(cliente4)
+                    .addComponent(cliente5)
+                    .addComponent(cliente6)
+                    .addComponent(cliente7)
+                    .addComponent(cliente8)
+                    .addComponent(cliente9)
+                    .addComponent(cliente10))
+                .addContainerGap(250, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(jLabel1)
-                .addGap(52, 52, 52)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addGap(40, 40, 40))
+                .addContainerGap()
+                .addComponent(cliente1)
+                .addGap(6, 6, 6)
+                .addComponent(cliente2)
+                .addGap(6, 6, 6)
+                .addComponent(cliente3)
+                .addGap(6, 6, 6)
+                .addComponent(cliente4)
+                .addGap(6, 6, 6)
+                .addComponent(cliente5)
+                .addGap(6, 6, 6)
+                .addComponent(cliente6)
+                .addGap(6, 6, 6)
+                .addComponent(cliente7)
+                .addGap(6, 6, 6)
+                .addComponent(cliente8)
+                .addGap(6, 6, 6)
+                .addComponent(cliente9)
+                .addGap(6, 6, 6)
+                .addComponent(cliente10)
+                .addContainerGap(245, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(1080, 0, 260, 310);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/outros/pista.jpg"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(0, 240, 1110, 70);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bar-backgrounds/bar10.png"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 1084, 245);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/outros/casas.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 310, 1080, 105);
+
+        jButton1.setText("Criar bebum");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(1080, 313, 260, 100);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 //       Comente as proximas 10 linhas se quiser adicionar manualmente
 //        this.createCliente("Paulo", 5, 10);
-//        this.createCliente("Paulo1", 5, 10);
-//        this.createCliente("Paulo2", 5, 10);
-//        this.createCliente("Paulo3", 5, 10);
-//        this.createCliente("Paulo4", 5, 10);
-//        this.createCliente("Paulo5", 5, 10);
-//        this.createCliente("Paulo6", 5, 10);
-//        this.createCliente("Paulo7", 5, 10);
+//        this.createCliente("Ricardo", 5, 10);
+//        this.createCliente("Bernardo", 5, 10);
+//        this.createCliente("Nivardo", 5, 10);
+//        this.createCliente("João", 5, 10);
+//        this.createCliente("Marcus", 5, 10);
+//        this.createCliente("Elysson", 5, 10);
+//        this.createCliente("Gabriel", 5, 10);
 //        this.createCliente("Paulo8", 5, 10);
 //        this.createCliente("Paulo9", 5, 10);
 //        Descomente a proxima linha se quiser adicionar manualmente
-        new ClienteForm(this).setVisible(true);
-//        this.cliente1.setText("Cliente 1");
+        if(this.actualIndex < 9) {
+            new ClienteForm(this).setVisible(true);
+        }
+//            this.cliente1.setText("Cliente 1");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public void createCliente(String identificador, float tempoCasa, float tempoBar) {
@@ -209,6 +199,7 @@ public class BarView extends javax.swing.JFrame {
         );
         cliente.start();
     }
+    
     /**
      * @param args the command line arguments
      */
@@ -235,6 +226,7 @@ public class BarView extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(BarView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -257,15 +249,15 @@ public class BarView extends javax.swing.JFrame {
     private javax.swing.JLabel cliente9;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
-
     public JPanel getjPanel2() {
-        return jPanel2;
+        return jPanel1;
     }
 
-    public void setjPanel2(JPanel jPanel2) {
-        this.jPanel2 = jPanel2;
+    public void setjPanel2(JPanel jPanel) {
+        this.jPanel1 = jPanel;
     }
 }
