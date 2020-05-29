@@ -5,6 +5,8 @@
  */
 package bardaesquina;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author paulo
@@ -16,7 +18,7 @@ public class BarDaEsquina {
      */
     public static void main(String[] args) {
        System.out.println("Programa Iniciando!!");
-       BackgroundBarView bar = new BackgroundBarView("Bar da esquina", 8);
+       Welcome bar = new Welcome();
        bar.setVisible(true);
     }
     

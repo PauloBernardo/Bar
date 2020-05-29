@@ -170,19 +170,21 @@ public class BackgroundBarView extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 //       Comente as proximas 10 linhas se quiser adicionar manualmente
-        this.createCliente("Paulo", 5, 10);
-        this.createCliente("Ricardo", 5, 10);
-        this.createCliente("Bernardo", 5, 10);
-        this.createCliente("Nivardo", 5, 10);
-        this.createCliente("João", 5, 10);
-        this.createCliente("Marcus", 5, 10);
-        this.createCliente("Elysson", 5, 10);
-        this.createCliente("Gabriel", 5, 10);
+//        this.createCliente("Paulo", 5, 10);
+//        this.createCliente("Ricardo", 5, 10);
+//        this.createCliente("Bernardo", 5, 10);
+//        this.createCliente("Nivardo", 5, 10);
+//        this.createCliente("João", 5, 10);
+//        this.createCliente("Marcus", 5, 10);
+//        this.createCliente("Elysson", 5, 10);
+//        this.createCliente("Gabriel", 5, 10);
 //        this.createCliente("Paulo8", 5, 10);
 //        this.createCliente("Paulo9", 5, 10);
 //        Descomente a proxima linha se quiser adicionar manualmente
-//        new ClienteForm(this).setVisible(true);
-//        this.cliente1.setText("Cliente 1");        // TODO add your handling code here:
+        if(this.actualIndex < 9) {
+            new ClienteForm(this).setVisible(true);
+        }
+//            this.cliente1.setText("Cliente 1");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public void createCliente(String identificador, float tempoCasa, float tempoBar) {
