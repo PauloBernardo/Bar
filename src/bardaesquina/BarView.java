@@ -73,6 +73,16 @@ public class BarView extends javax.swing.JFrame {
         cliente8 = new javax.swing.JLabel();
         cliente9 = new javax.swing.JLabel();
         cliente10 = new javax.swing.JLabel();
+        client10 = new javax.swing.JLabel();
+        client9 = new javax.swing.JLabel();
+        client8 = new javax.swing.JLabel();
+        client7 = new javax.swing.JLabel();
+        client6 = new javax.swing.JLabel();
+        client5 = new javax.swing.JLabel();
+        client4 = new javax.swing.JLabel();
+        client3 = new javax.swing.JLabel();
+        client2 = new javax.swing.JLabel();
+        client1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -131,6 +141,74 @@ public class BarView extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(1080, 0, 260, 310);
 
+        client10.setBackground(new java.awt.Color(167, 68, 68));
+        client10.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        client10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado10.png"))); // NOI18N
+        client10.setText("Cliente 1");
+        getContentPane().add(client10);
+        client10.setBounds(980, 300, 100, 100);
+
+        client9.setBackground(new java.awt.Color(167, 68, 68));
+        client9.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        client9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado9.png"))); // NOI18N
+        client9.setText("Cliente 1");
+        getContentPane().add(client9);
+        client9.setBounds(870, 300, 100, 100);
+
+        client8.setBackground(new java.awt.Color(167, 68, 68));
+        client8.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        client8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado8.png"))); // NOI18N
+        client8.setText("Cliente 1");
+        getContentPane().add(client8);
+        client8.setBounds(770, 300, 100, 100);
+
+        client7.setBackground(new java.awt.Color(167, 68, 68));
+        client7.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        client7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado7.png"))); // NOI18N
+        client7.setText("Cliente 1");
+        getContentPane().add(client7);
+        client7.setBounds(660, 300, 100, 100);
+
+        client6.setBackground(new java.awt.Color(167, 68, 68));
+        client6.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        client6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado6.png"))); // NOI18N
+        client6.setText("Cliente 1");
+        getContentPane().add(client6);
+        client6.setBounds(550, 300, 100, 100);
+
+        client5.setBackground(new java.awt.Color(167, 68, 68));
+        client5.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        client5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado5.png"))); // NOI18N
+        client5.setText("Cliente 1");
+        getContentPane().add(client5);
+        client5.setBounds(440, 300, 100, 100);
+
+        client4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado4.png"))); // NOI18N
+        client4.setText("jLabel4");
+        getContentPane().add(client4);
+        client4.setBounds(330, 300, 90, 100);
+
+        client3.setBackground(new java.awt.Color(167, 68, 68));
+        client3.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        client3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado3.png"))); // NOI18N
+        client3.setText("Cliente 1");
+        getContentPane().add(client3);
+        client3.setBounds(220, 300, 100, 100);
+
+        client2.setBackground(new java.awt.Color(167, 68, 68));
+        client2.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        client2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado2.png"))); // NOI18N
+        client2.setText("Cliente 1");
+        getContentPane().add(client2);
+        client2.setBounds(110, 300, 100, 100);
+
+        client1.setBackground(new java.awt.Color(167, 68, 68));
+        client1.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        client1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado1.png"))); // NOI18N
+        client1.setText("Cliente 1");
+        getContentPane().add(client1);
+        client1.setBounds(10, 300, 100, 100);
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/outros/pista.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 240, 1110, 70);
@@ -187,7 +265,20 @@ public class BarView extends javax.swing.JFrame {
         list.add(cliente8);
         list.add(cliente9);
         list.add(cliente10);
+        ArrayList<JLabel> list1 = new ArrayList();
+        list1.add(this.client1);
+        list1.add(this.client2);
+        list1.add(this.client3);
+        list1.add(this.client4);
+        list1.add(this.client5);
+        list1.add(this.client6);
+        list1.add(this.client7);
+        list1.add(this.client8);
+        list1.add(this.client9);
+        list1.add(this.client10);
         Cliente cliente = new Cliente(
+                this.actualIndex,
+                list1.get(this.actualIndex),
                 list.get(this.actualIndex++),
                 identificador,
                 tempoCasa,
@@ -237,6 +328,16 @@ public class BarView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel client1;
+    public javax.swing.JLabel client10;
+    private javax.swing.JLabel client2;
+    public javax.swing.JLabel client3;
+    private javax.swing.JLabel client4;
+    public javax.swing.JLabel client5;
+    public javax.swing.JLabel client6;
+    public javax.swing.JLabel client7;
+    public javax.swing.JLabel client8;
+    public javax.swing.JLabel client9;
     private javax.swing.JLabel cliente1;
     private javax.swing.JLabel cliente10;
     private javax.swing.JLabel cliente2;

@@ -6,6 +6,8 @@
 package bardaesquina;
 
 import java.util.concurrent.Semaphore;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JLabel;
 
 /**
@@ -13,6 +15,8 @@ import javax.swing.JLabel;
  */
 public class Cliente extends Thread {
 
+    int clientIndex = 0;
+    JLabel clientImage = null;
     JLabel label = null;
     String identificador = "Anônimo";
     float tempoCasa;
@@ -23,6 +27,8 @@ public class Cliente extends Thread {
     BarView bar;
 
     Cliente(
+            int index,
+            JLabel clientImage,
             JLabel get,
             String identificador,
             float tempoCasa,
@@ -33,6 +39,8 @@ public class Cliente extends Thread {
             BarView father
     ) {
         super(identificador);
+        this.clientIndex = index;
+        this.clientImage = clientImage;
         this.label = get;
         this.identificador = identificador;
         this.tempoCasa = tempoCasa;
@@ -43,8 +51,33 @@ public class Cliente extends Thread {
         this.bar = father;
     }
 
+    private void setLocationAnimation(int numCadeira, String status) {
+         switch(status) {
+            case " No Bar ":
+                while(this.clientImage.getY() > 70) {
+                    this.clientImage.setLocation(20 + this.clientIndex * 110, this.clientImage.getY() - 1);
+             try {
+                 Thread.sleep(10);
+             } catch (InterruptedException ex) {
+                 Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
+             }
+                }
+                break;
+            case " Em Casa ":
+                while(this.clientImage.getY() < 290) {
+                    this.clientImage.setLocation(20 + this.clientIndex * 110, this.clientImage.getY() + 1);
+             try {
+                 Thread.sleep(10);
+             } catch (InterruptedException ex) {
+                 Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
+             }
+                }
+                break;
+        }
+    }
 
-    public void printStatus(String status, float time) {
+    private void printStatus(String status, float time) {
+        this.setLocationAnimation(0, status);
         long tempoInicial = System.currentTimeMillis();
         while ((System.currentTimeMillis() - tempoInicial) / 1000.0 < time) {
             this.label.setText(this.identificador + status + (
