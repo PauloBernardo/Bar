@@ -2,26 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0eb49c3-b66d-49d1-aef3-719be136308d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bar.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bardaesquina/Teste.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bardaesquina/Teste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Bar.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarDaEsquina.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarDaEsquina.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Cliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bardaesquina/BarDaEsquina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bardaesquina/BarDaEsquina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BackgroundBarView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BackgroundBarView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BackgroundBarView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarDaEsquina.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarDaEsquina.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/InicialConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/InicialConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/imagens/casa-backgrounds/casa1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/imagens/casa-backgrounds/casa10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/imagens/casa-backgrounds/casa2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/imagens/casa-backgrounds/casa3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/imagens/casa-backgrounds/casa4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/imagens/casa-backgrounds/casa5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/imagens/casa-backgrounds/casa6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/imagens/casa-backgrounds/casa7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/imagens/casa-backgrounds/casa8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/imagens/casa-backgrounds/casa9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bardaesquina/BarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bardaesquina/BarView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bardaesquina/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bardaesquina/Cliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +75,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration name="BarDaEsquina" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -81,6 +113,8 @@
       <option name="presentableId" value="Default" />
       <updated>1590766153933</updated>
       <workItem from="1590766157844" duration="688000" />
+      <workItem from="1590936026784" duration="2205000" />
+      <workItem from="1590938680040" duration="2385000" />
     </task>
     <servers />
   </component>
@@ -88,21 +122,33 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1590766846873">
+    <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1590946351933">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1590766846873" />
-    <state width="1320" height="172" key="GridCell.Tab.0.center" timestamp="1590766846873">
+    <state width="1320" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1590946351933" />
+    <state width="1320" height="172" key="GridCell.Tab.0.center" timestamp="1590946351933">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1590766846873" />
-    <state width="1320" height="172" key="GridCell.Tab.0.left" timestamp="1590766846872">
+    <state width="1320" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1590946351933" />
+    <state width="1320" height="172" key="GridCell.Tab.0.left" timestamp="1590946351932">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1590766846872" />
-    <state width="1320" height="172" key="GridCell.Tab.0.right" timestamp="1590766846873">
+    <state width="1320" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1590946351932" />
+    <state width="1320" height="172" key="GridCell.Tab.0.right" timestamp="1590946351933">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1590766846873" />
+    <state width="1320" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1590946351933" />
+    <state x="41" y="69" width="1092" height="629" key="MergeDialog" timestamp="1590936136158">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="41" y="69" width="1092" height="629" key="MergeDialog/0.27.1366.741@0.27.1366.741" timestamp="1590936136158" />
+    <state x="564" y="265" width="545" height="271" key="MultipleFileMergeDialog" timestamp="1590936136177">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="564" y="265" width="545" height="271" key="MultipleFileMergeDialog/0.27.1366.741@0.27.1366.741" timestamp="1590936136177" />
+    <state x="454" y="312" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590936108565">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="454" y="312" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1590936108565" />
   </component>
 </project>

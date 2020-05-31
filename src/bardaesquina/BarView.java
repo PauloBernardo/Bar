@@ -27,11 +27,11 @@ public class BarView extends javax.swing.JFrame {
     int actualIndex = 0;
     JFrame isto = this;
     int numeroClientes = 0;
-    
+
     public BarView(){
         initComponents();
     }
-    
+
     public BarView(String barClub, int qntCadeiras) {
         super(barClub);
         initComponents();
@@ -50,7 +50,7 @@ public class BarView extends javax.swing.JFrame {
         setSize(1360, 450);
         this.s = new Semaphore(qntCadeiras, true);
         this.qntCadeiras = qntCadeiras;
-    
+
     }
 
     /**
@@ -169,7 +169,7 @@ public class BarView extends javax.swing.JFrame {
 //        this.createCliente("Paulo8", 5, 10);
 //        this.createCliente("Paulo9", 5, 10);
 //        Descomente a proxima linha se quiser adicionar manualmente
-        if(this.actualIndex < 9) {
+        if(this.actualIndex < 10) {
             new ClienteForm(this).setVisible(true);
         }
 //            this.cliente1.setText("Cliente 1");        // TODO add your handling code here:
@@ -188,10 +188,10 @@ public class BarView extends javax.swing.JFrame {
         list.add(cliente9);
         list.add(cliente10);
         Cliente cliente = new Cliente(
-                list.get(this.actualIndex++), 
-                identificador, 
-                tempoCasa, 
-                tempoBar, 
+                list.get(this.actualIndex++),
+                identificador,
+                tempoCasa,
+                tempoBar,
                 s,
                 mutex,
                 mutex2,
@@ -199,7 +199,7 @@ public class BarView extends javax.swing.JFrame {
         );
         cliente.start();
     }
-    
+
     /**
      * @param args the command line arguments
      */
@@ -207,7 +207,7 @@ public class BarView extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
