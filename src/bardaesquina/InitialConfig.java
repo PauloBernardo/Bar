@@ -16,6 +16,7 @@ public class InitialConfig extends javax.swing.JFrame {
      */
     public InitialConfig() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

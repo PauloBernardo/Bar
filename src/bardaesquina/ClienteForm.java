@@ -23,8 +23,9 @@ public class ClienteForm extends javax.swing.JFrame {
 
     BarView father = null;
     ClienteForm(BarView aThis) {
-       this.father= aThis;
-       initComponents();
+        this.father= aThis;
+        initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -66,6 +67,7 @@ public class ClienteForm extends javax.swing.JFrame {
             }
         });
 
+        indentificadorText.setText(Integer.toString((this.father.numeroClientesReal+1)));
         indentificadorText.setToolTipText("Identificador");
         indentificadorText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,9 +118,7 @@ public class ClienteForm extends javax.swing.JFrame {
                                         .addComponent(tempoCasaText, javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(tempoBarText, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(indentificadorText, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(191, 191, 191))))
+                            .addComponent(jLabel3)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addComponent(jButton1)))
@@ -200,8 +200,8 @@ public class ClienteForm extends javax.swing.JFrame {
             tempoBarFloat = Float.parseFloat(tempoBar);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Tempo Bar e Casa devem ser floats", "Alerta!!", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
+            return; 
+       }
         this.father.createCliente(identificador, tempoCasaFloat, tempoBarFloat);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

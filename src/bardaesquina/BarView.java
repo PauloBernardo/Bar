@@ -5,6 +5,8 @@
  */
 package bardaesquina;
 
+import java.awt.Color;
+import java.awt.Container;
 import java.util.ArrayList;
 import java.util.concurrent.Semaphore;
 import javax.swing.JFrame;
@@ -27,6 +29,7 @@ public class BarView extends javax.swing.JFrame {
     int actualIndex = 0;
     JFrame isto = this;
     int numeroClientes = 0;
+    int numeroClientesReal = 0;
 
     public BarView(){
         initComponents();
@@ -35,17 +38,7 @@ public class BarView extends javax.swing.JFrame {
     public BarView(String barClub, int qntCadeiras) {
         super(barClub);
         initComponents();
-        String[] bar = new String[10];
-        bar[0] = "/imagens/bar-backgrounds/bar1.png";
-        bar[1] = "/imagens/bar-backgrounds/bar2.png";
-        bar[2] = "/imagens/bar-backgrounds/bar3.png";
-        bar[3] = "/imagens/bar-backgrounds/bar4.png";
-        bar[4] = "/imagens/bar-backgrounds/bar5.png";
-        bar[5] = "/imagens/bar-backgrounds/bar6.png";
-        bar[6] = "/imagens/bar-backgrounds/bar7.png";
-        bar[7] = "/imagens/bar-backgrounds/bar8.png";
-        bar[8] = "/imagens/bar-backgrounds/bar9.png";
-        bar[9] = "/imagens/bar-backgrounds/bar10.png";
+        String[] bar = {"/imagens/bar-backgrounds/bar1.png", "/imagens/bar-backgrounds/bar2.png", "/imagens/bar-backgrounds/bar3.png", "/imagens/bar-backgrounds/bar4.png", "/imagens/bar-backgrounds/bar5.png", "/imagens/bar-backgrounds/bar6.png", "/imagens/bar-backgrounds/bar7.png", "/imagens/bar-backgrounds/bar8.png", "/imagens/bar-backgrounds/bar9.png", "/imagens/bar-backgrounds/bar10.png"};
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource(bar[qntCadeiras - 1])));
         setSize(1360, 450);
         this.s = new Semaphore(qntCadeiras, true);
@@ -62,6 +55,7 @@ public class BarView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         cliente1 = new javax.swing.JLabel();
         cliente2 = new javax.swing.JLabel();
@@ -86,12 +80,67 @@ public class BarView extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(51, 51, 51));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setForeground(java.awt.Color.pink);
+        setResizable(false);
         getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setText("Criar bebum");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(1090, 313, 250, 100);
+
+        jPanel1.setBackground(new java.awt.Color(41, 41, 41));
+        jPanel1.setForeground(new java.awt.Color(0, 255, 0));
+
+        cliente1.setBackground(new java.awt.Color(0, 255, 0));
+        cliente1.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        cliente1.setForeground(new java.awt.Color(0, 255, 0));
+
+        cliente2.setBackground(new java.awt.Color(0, 255, 0));
+        cliente2.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        cliente2.setForeground(new java.awt.Color(0, 255, 0));
+
+        cliente3.setBackground(new java.awt.Color(0, 255, 0));
+        cliente3.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        cliente3.setForeground(new java.awt.Color(0, 255, 0));
+
+        cliente4.setBackground(new java.awt.Color(0, 255, 0));
+        cliente4.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        cliente4.setForeground(new java.awt.Color(0, 255, 0));
+
+        cliente5.setBackground(new java.awt.Color(0, 255, 0));
+        cliente5.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        cliente5.setForeground(new java.awt.Color(0, 255, 0));
+
+        cliente6.setBackground(new java.awt.Color(0, 255, 0));
+        cliente6.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        cliente6.setForeground(new java.awt.Color(0, 255, 0));
+
+        cliente7.setBackground(new java.awt.Color(0, 255, 0));
+        cliente7.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        cliente7.setForeground(new java.awt.Color(0, 255, 0));
+
+        cliente8.setBackground(new java.awt.Color(0, 255, 0));
+        cliente8.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        cliente8.setForeground(new java.awt.Color(0, 255, 0));
+
+        cliente9.setBackground(new java.awt.Color(0, 255, 0));
+        cliente9.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        cliente9.setForeground(new java.awt.Color(0, 255, 0));
+
+        cliente10.setBackground(new java.awt.Color(0, 255, 0));
+        cliente10.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        cliente10.setForeground(new java.awt.Color(0, 255, 0));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -110,7 +159,7 @@ public class BarView extends javax.swing.JFrame {
                     .addComponent(cliente8)
                     .addComponent(cliente9)
                     .addComponent(cliente10))
-                .addContainerGap(250, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -135,11 +184,11 @@ public class BarView extends javax.swing.JFrame {
                 .addComponent(cliente9)
                 .addGap(6, 6, 6)
                 .addComponent(cliente10)
-                .addContainerGap(245, Short.MAX_VALUE))
+                .addContainerGap(354, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(1080, 0, 260, 310);
+        jPanel1.setBounds(1080, 0, 280, 420);
 
         client10.setBackground(new java.awt.Color(167, 68, 68));
         client10.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
@@ -153,21 +202,21 @@ public class BarView extends javax.swing.JFrame {
         client9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado9.png"))); // NOI18N
         client9.setText("Cliente 1");
         getContentPane().add(client9);
-        client9.setBounds(870, 300, 100, 100);
+        client9.setBounds(860, 300, 100, 100);
 
         client8.setBackground(new java.awt.Color(167, 68, 68));
         client8.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
         client8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado8.png"))); // NOI18N
         client8.setText("Cliente 1");
         getContentPane().add(client8);
-        client8.setBounds(770, 300, 100, 100);
+        client8.setBounds(760, 300, 100, 100);
 
         client7.setBackground(new java.awt.Color(167, 68, 68));
         client7.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
         client7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado7.png"))); // NOI18N
         client7.setText("Cliente 1");
         getContentPane().add(client7);
-        client7.setBounds(660, 300, 100, 100);
+        client7.setBounds(650, 300, 100, 100);
 
         client6.setBackground(new java.awt.Color(167, 68, 68));
         client6.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
@@ -181,12 +230,12 @@ public class BarView extends javax.swing.JFrame {
         client5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado5.png"))); // NOI18N
         client5.setText("Cliente 1");
         getContentPane().add(client5);
-        client5.setBounds(440, 300, 100, 100);
+        client5.setBounds(430, 300, 100, 100);
 
         client4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado4.png"))); // NOI18N
         client4.setText("jLabel4");
         getContentPane().add(client4);
-        client4.setBounds(330, 300, 90, 100);
+        client4.setBounds(320, 300, 90, 100);
 
         client3.setBackground(new java.awt.Color(167, 68, 68));
         client3.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
@@ -207,7 +256,7 @@ public class BarView extends javax.swing.JFrame {
         client1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/bebados/bebado1.png"))); // NOI18N
         client1.setText("Cliente 1");
         getContentPane().add(client1);
-        client1.setBounds(10, 300, 100, 100);
+        client1.setBounds(0, 300, 100, 100);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/outros/pista.jpg"))); // NOI18N
         getContentPane().add(jLabel2);
@@ -220,18 +269,10 @@ public class BarView extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/outros/casas.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, 310, 1080, 105);
+        jLabel3.setBounds(0, 305, 1080, 120);
 
-        jButton1.setText("Criar bebum");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(1080, 313, 260, 100);
-
-        pack();
+        setSize(new java.awt.Dimension(1361, 445));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -254,6 +295,7 @@ public class BarView extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public void createCliente(String identificador, float tempoCasa, float tempoBar) {
+        
         ArrayList<JLabel> list = new ArrayList();
         list.add(cliente1);
         list.add(cliente2);
@@ -265,6 +307,7 @@ public class BarView extends javax.swing.JFrame {
         list.add(cliente8);
         list.add(cliente9);
         list.add(cliente10);
+        
         ArrayList<JLabel> list1 = new ArrayList();
         list1.add(this.client1);
         list1.add(this.client2);
@@ -276,6 +319,7 @@ public class BarView extends javax.swing.JFrame {
         list1.add(this.client8);
         list1.add(this.client9);
         list1.add(this.client10);
+        this.numeroClientesReal++;
         Cliente cliente = new Cliente(
                 this.actualIndex,
                 list1.get(this.actualIndex),
