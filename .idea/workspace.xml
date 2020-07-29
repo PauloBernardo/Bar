@@ -3,11 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="c0eb49c3-b66d-49d1-aef3-719be136308d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarDaEsquina.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarDaEsquina.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarView.form" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bardaesquina/BarView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/bardaesquina/BarView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bardaesquina/BarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bardaesquina/BarView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bardaesquina/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bardaesquina/Cliente.java" afterDir="false" />
@@ -25,8 +48,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="3877830f-d458-44f8-ac86-54e8d6db1b4d" />
   <component name="ProjectId" id="1caUMwGaDXEoKJtBJrjECrnj0gX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -44,6 +73,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
     <configuration name="BarDaEsquina" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -55,6 +85,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590946913058</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lixo">
+      <created>1596046919917</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596046919917</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,29 +142,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bugfix na quantidade de clientes e em qual cliente pode entrar no bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugfix na quantidade de clientes e em qual cliente pode entrar no bar" />
+    <MESSAGE value="lixo" />
+    <option name="LAST_COMMIT_MESSAGE" value="lixo" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="222" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1590946912727">
+    <state x="222" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1596046919664">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="222" y="27" width="912" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1590946912727" />
-    <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1590946351933">
+    <state x="222" y="27" width="912" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1596046919664" />
+    <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1596048294495">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1590946351933" />
-    <state width="1320" height="172" key="GridCell.Tab.0.center" timestamp="1590946351933">
+    <state width="1320" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1596048294495" />
+    <state width="1320" height="172" key="GridCell.Tab.0.center" timestamp="1596048294494">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1590946351933" />
-    <state width="1320" height="172" key="GridCell.Tab.0.left" timestamp="1590946351932">
+    <state width="1320" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1596048294494" />
+    <state width="1320" height="172" key="GridCell.Tab.0.left" timestamp="1596048294493">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1590946351932" />
-    <state width="1320" height="172" key="GridCell.Tab.0.right" timestamp="1590946351933">
+    <state width="1320" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1596048294493" />
+    <state width="1320" height="172" key="GridCell.Tab.0.right" timestamp="1596048294495">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1590946351933" />
+    <state width="1320" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1596048294495" />
     <state x="41" y="69" width="1092" height="629" key="MergeDialog" timestamp="1590936136158">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -129,9 +178,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1590947001597" />
-    <state x="454" y="312" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590936108565">
+    <state x="454" y="312" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596046935888">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="454" y="312" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1590936108565" />
+    <state x="454" y="312" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1596046935888" />
   </component>
 </project>

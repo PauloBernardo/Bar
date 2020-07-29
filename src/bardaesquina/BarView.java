@@ -22,13 +22,12 @@ public class BarView extends javax.swing.JFrame {
     /**
      * Creates new form BarView
      */
-    Semaphore s = null;
-    Semaphore mutex = new Semaphore(1, true);
-    Semaphore mutex2 = new Semaphore(1, true);
-    int qntCadeiras = 0;
+    Semaphore controleDeVariaveis = new Semaphore(1, true);
+    Semaphore controleDeEntradaDeClientes = new Semaphore(1, true);
+    int quantidadeTotalDeCadeiras = 0;
     int actualIndex = 0;
     JFrame isto = this;
-    int numeroClientes = 0;
+    int numeroAtualDeClientes = 0;
     int numeroClientesReal = 0;
 
     public BarView(){
@@ -41,8 +40,7 @@ public class BarView extends javax.swing.JFrame {
         String[] bar = {"/imagens/bar-backgrounds/bar1.png", "/imagens/bar-backgrounds/bar2.png", "/imagens/bar-backgrounds/bar3.png", "/imagens/bar-backgrounds/bar4.png", "/imagens/bar-backgrounds/bar5.png", "/imagens/bar-backgrounds/bar6.png", "/imagens/bar-backgrounds/bar7.png", "/imagens/bar-backgrounds/bar8.png", "/imagens/bar-backgrounds/bar9.png", "/imagens/bar-backgrounds/bar10.png"};
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource(bar[qntCadeiras - 1])));
         setSize(1360, 450);
-        this.s = new Semaphore(qntCadeiras, true);
-        this.qntCadeiras = qntCadeiras;
+        this.quantidadeTotalDeCadeiras = qntCadeiras;
 
     }
 
@@ -291,11 +289,11 @@ public class BarView extends javax.swing.JFrame {
         if(this.actualIndex < 10) {
             new ClienteForm(this).setVisible(true);
         }
-//            this.cliente1.setText("Cliente 1");        // TODO add your handling code here:
+            this.cliente1.setText("Cliente 1");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public void createCliente(String identificador, float tempoCasa, float tempoBar) {
-        
+
         ArrayList<JLabel> list = new ArrayList();
         list.add(cliente1);
         list.add(cliente2);
@@ -307,7 +305,7 @@ public class BarView extends javax.swing.JFrame {
         list.add(cliente8);
         list.add(cliente9);
         list.add(cliente10);
-        
+
         ArrayList<JLabel> list1 = new ArrayList();
         list1.add(this.client1);
         list1.add(this.client2);
@@ -327,9 +325,8 @@ public class BarView extends javax.swing.JFrame {
                 identificador,
                 tempoCasa,
                 tempoBar,
-                s,
-                mutex,
-                mutex2,
+                controleDeVariaveis,
+                controleDeEntradaDeClientes,
                 this
         );
         cliente.start();
