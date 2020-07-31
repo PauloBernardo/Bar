@@ -29,6 +29,7 @@ public class BarView extends javax.swing.JFrame {
     JFrame isto = this;
     int numeroAtualDeClientes = 0;
     int numeroClientesReal = 0;
+    int [] assentosDisponiveis;
 
     public BarView(){
         initComponents();
@@ -41,7 +42,7 @@ public class BarView extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource(bar[qntCadeiras - 1])));
         setSize(1360, 450);
         this.quantidadeTotalDeCadeiras = qntCadeiras;
-
+        this.assentosDisponiveis = new int[qntCadeiras];
     }
 
     /**

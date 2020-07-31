@@ -26,6 +26,7 @@ public class Cliente extends Thread {
     Semaphore controleDeEntrada;
     BarView bar;
     String identificadorFormatado;
+    int numCadeira = 0;
 
     Cliente(
             int index,
@@ -154,6 +155,7 @@ public class Cliente extends Thread {
 
         long tempoInicial = System.currentTimeMillis();
 
+        // PROCESSO CPU BOUND 
         while ((System.currentTimeMillis() - tempoInicial) / 1000.0 < time) {
 
             String tempoCorrido = String.format(Locale.US, "%.1f", ((float) (System.currentTimeMillis() - tempoInicial) / 1000));
@@ -173,28 +175,45 @@ public class Cliente extends Thread {
                     // Dorme se tiver lotado
                     this.controleDeEntrada.acquire();
 
-                    System.out.println(System.currentTimeMillis() + " -> Cliente " + this.identificador + " candidato -" + this.bar.numeroAtualDeClientes);
-
+                    // MANIPULA AS VARIÁVEIS
                     this.controleDeVariaveis.acquire();
 
+                        // Incrementa o número de clientes no bar
                         this.bar.numeroAtualDeClientes++;
+                        System.out.println(System.currentTimeMillis() + " -> Cliente " + this.identificador + " candidato - " + this.bar.numeroAtualDeClientes);
+
+                        // Verifica se o bar está lotado
                         if (this.bar.numeroAtualDeClientes < this.bar.quantidadeTotalDeCadeiras) {
                             // Libera a entrada se não tiver lotado
                             this.controleDeEntrada.release();
+                          
                         }
-                        int numCadeira = this.bar.numeroAtualDeClientes;
+                        
+                        // Seleciona o primeiro assento disponivel
+                        for (int i = 0; i < this.bar.assentosDisponiveis.length; i++) {
+                            if (this.bar.assentosDisponiveis[i] != -1) {
+                                this.numCadeira = i + 1;
+                                // Ocupa o assento
+                                this.bar.assentosDisponiveis[i] = -1;
+                                break;
+                            }
+                        }
 
                     this.controleDeVariaveis.release();
-
-                    // Dorme se tiver lotado
-                    this.printStatus(estadoAtual, this.tempoBar, numCadeira); // Beber
+                    
+                    // Bebe o tempo estipulado
+                    this.printStatus(estadoAtual, this.tempoBar, this.numCadeira);
 
                     estadoAtual = " Em Casa ";
+                    
+                    // MANIPULA VARIAVEIS
                     this.controleDeVariaveis.acquire();
-
+                        
+                        // Sai do assento, deixando disponível
+                        this.bar.assentosDisponiveis[this.numCadeira - 1] = 0;
+                        // Diminui o número de clientes no bar
                         this.bar.numeroAtualDeClientes--;
-
-                        // Libera a entrada quando esvazia o bar
+                        // Libera a entrada se o bar estiver vazio
                         if (this.bar.numeroAtualDeClientes == 0) this.controleDeEntrada.release();
 
                     this.controleDeVariaveis.release();
@@ -202,16 +221,9 @@ public class Cliente extends Thread {
                     System.out.println(e.getMessage());
                 }
             } else {
-                try {
-                    this.controleDeVariaveis.acquire();
-                        int numCadeira = this.bar.numeroAtualDeClientes;
-                    this.controleDeVariaveis.release();
-                    
-                    this.printStatus(estadoAtual, this.tempoCasa, numCadeira);
-                    estadoAtual = " No Bar ";
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                // Fica em casa o tempo estipulado
+                this.printStatus(estadoAtual, this.tempoCasa, this.numCadeira);
+                estadoAtual = " No Bar ";
             }
         }
     }
