@@ -3,37 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c0eb49c3-b66d-49d1-aef3-719be136308d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarDaEsquina.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarDaEsquina.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarView$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/BarView.form" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/BarView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/ClienteForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/InitialConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/bardaesquina/Welcome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/BarView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bar/bardaesquina/ClienteForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bardaesquina/BarView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/bardaesquina/BarView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bardaesquina/BarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bardaesquina/BarView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bardaesquina/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bardaesquina/Cliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -89,22 +63,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BarDaEsquina" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -119,6 +94,7 @@
       <workItem from="1590766157844" duration="688000" />
       <workItem from="1590936026784" duration="2205000" />
       <workItem from="1590938680040" duration="3220000" />
+      <workItem from="1596213315499" duration="1072000" />
     </task>
     <task id="LOCAL-00001" summary="Bugfix na quantidade de clientes e em qual cliente pode entrar no bar">
       <created>1590946913058</created>
@@ -138,7 +114,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bugfix na quantidade de clientes e em qual cliente pode entrar no bar" />

@@ -43,6 +43,16 @@ public class BarView extends javax.swing.JFrame {
         setSize(1360, 450);
         this.quantidadeTotalDeCadeiras = qntCadeiras;
         this.assentosDisponiveis = new int[qntCadeiras];
+        this.client1.setVisible(false);
+        this.client2.setVisible(false);
+        this.client3.setVisible(false);
+        this.client4.setVisible(false);
+        this.client5.setVisible(false);
+        this.client6.setVisible(false);
+        this.client7.setVisible(false);
+        this.client8.setVisible(false);
+        this.client9.setVisible(false);
+        this.client10.setVisible(false);
     }
 
     /**
@@ -319,6 +329,8 @@ public class BarView extends javax.swing.JFrame {
         list1.add(this.client9);
         list1.add(this.client10);
         this.numeroClientesReal++;
+        
+        list1.get(this.actualIndex).setVisible(true);
         Cliente cliente = new Cliente(
                 this.actualIndex,
                 list1.get(this.actualIndex),
